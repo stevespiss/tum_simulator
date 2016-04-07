@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="Maze 1">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://maze_1/meshes/maze1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://maze_1/meshes/maze1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/kitchen.material</uri>
+	    <name>Kitchen/Wall</name>
+	  </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

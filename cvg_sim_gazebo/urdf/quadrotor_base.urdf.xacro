@@ -33,8 +33,6 @@ xmlns:xacro="http://ros.org/wiki/xacro"
       </collision>
     </link>
 
-
-
     <gazebo reference="base_link">
       <turnGravityOff>false</turnGravityOff>
     </gazebo>

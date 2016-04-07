@@ -132,6 +132,7 @@ int main(int argc, char** argv) {
 
   ros::NodeHandle node;
   ros::Subscriber sub1, sub2, sub3;
+  
   if (!g_odometry_topic.empty()) sub1 = node.subscribe(g_odometry_topic, 10, &odomCallback);
   if (!g_pose_topic.empty())     sub2 = node.subscribe(g_pose_topic, 10, &poseCallback);
   if (!g_imu_topic.empty())      sub3 = node.subscribe(g_imu_topic, 10, &imuCallback);
